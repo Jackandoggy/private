@@ -48,4 +48,7 @@ class bot_info(object):
     BOT_USERNAME = None
     BOT_ID = None
 
+#image
+    # Get this api from https://www.remove.bg/b/background-removal-api
+    RemoveBG_API = os.environ.get("RemoveBG_API", "")
 
