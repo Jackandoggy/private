@@ -1,33 +1,31 @@
 class LuciferMoringstar(object):
 
-    DEFAULT_MSG = """👋Hello {mention}.....!!!\nIt's Power Full [{bot_name}](t.me/{bot_username}) Here 😎\nAdd Me To Your Group And Make Sure Iam Admin There! \nAnd Enjoy My Pever Show.....!!!🤪"""
+    DEFAULT_MSG = """👋Hello {mention}.....!!!\nIt's Power Full [{bot_name}](t.me/{bot_username}) Here 😎\nAdd Me To Your Group And Make Sure I am Admin There! \nAnd Enjoy My Features.....!!!🤪"""
 
-    HELP_MSG = """**Help Veno Monuse 🤣**"""
+    HELP_MSG = """**Seng /help to get help and to know my features**"""
 
     ABOUT_MSG = """
 🤖 My Name [{bot_name}](t.me/{bot_username})
 
-🧑 My Dev : [PR0FESS0R-99](t.me/PR0FESS0R_99)
+🧑 My Dev : [Geronimo Lover](https://t.me/check_this_channel)
 
-🧑 My Creator : {dev_name}
+🧑 My Creator : [Alif Muhammed](https://t.me/Alifmuhammed_tg)
 
-📦 My Source : [Click Here](https://github.com/PR0FESS0R-99/LuciferMoringstar_Robot)
+📦 My Source : [Click Here](https://github.com/Jackandoggy/private)
 
-📺 My Tutorial : [Ckick Here](https://youtu.be/FCU_XJmyG_U)
+🗃️ My Library : [Pyrogram](https://t.me/The_Ultimate_Library)
 
-🗃️ My Library : [Pyrogram](https://youtu.be/Af055Eozk9s)
+🖇️ My Language : [Python3](https://t.me/all_super_movies)
 
-🖇️ My Language : [Python3](https://youtu.be/Af055Eozk9s)
+🗃️ My Database : [Mongodb](https://t.me/free_cartoons)
 
-🗃️ My Database : [Mongodb](https://youtu.be/gBLTsH-IXr0)
+🗳️ My Server : [Heroku](https://t.me/song_requestgroup)
 
-🗳️ My Server : [Heroku](https://youtu.be/xcZD55td6Vw)
+🏷️ My Updates : [Film Godown](https://t.me/film_godown)
 
-🏷️ My Updates : [Mo Tech](t.me/Mo_Tech_YT)
+🗣️ My Support : [Join Here](https://t.me/Cinemachanda)"""
 
-🗣️ My Support : [Any Doubt](t.me/Mo_Tech_Group)"""
-
-    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}"""
+    FILE_CAPTIONS = """Hello 👋 {mention}\n\n📁Title {title}\n\n🔘Size {size}\n\nEnjoy your movie!"""
 
     PR0FESS0R_99 = """
 **ADMINS COMMANDS**
@@ -39,11 +37,17 @@ class LuciferMoringstar(object):
  » /logger - Get Bot Logs
  » /channel - Add Channel List"""
 
-    ADD_YOUR_GROUP = """**__ഞാൻ ജോലി ചെയ്യുന്ന ഗ്രൂപ്പിൽ ചേരൂ, നിങ്ങൾക്ക് ആവശ്യമുള്ള എല്ലാ സിനിമകളും  ആ ഗ്രൂപ്പിൽ അഭ്യർത്ഥിക്കാം? ഇവിടെ ചോദിക്കരുത്__**"""
+    ADD_YOUR_GROUP = """**__Join my group and request movies there__**"""
     SPELL_CHECK = """
 Hello 👋〘 {mention} 〙,
 
-Couldn't Find {query}?  Please Click Your Request Movie Name"""
+Couldn't Find {query}?  Please Check Your Requested Movie Name
+Possible reasons:
+
+The movie may not be released
+The movie may not be uploaded
+The movie may be removed due to copyright issues
+The spelling may be incorrect. Please check it in Google, IMDB or Wiki"""
     GET_MOVIE_1 = """
 📽️ Requested Movie : [{query}]({url})
 👤 Requested By : {mention}
