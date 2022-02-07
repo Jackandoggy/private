@@ -31,7 +31,7 @@ async def text(bot, message):
         await bot.send_photo(
             chat_id=chat_id,
             photo=file_name,
-            caption="Join @BugHunterBots"
+            caption="Join @film_godown"
         )
         await txt.delete()
         os.remove(file_name)
