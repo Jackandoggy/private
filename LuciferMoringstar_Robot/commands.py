@@ -8,7 +8,7 @@ from LuciferMoringstar_Robot.database.broadcast_db import Database
 db = Database()
 
 
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["begin"]))
+@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["start"]))
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
@@ -21,7 +21,7 @@ async def start_message(bot, message):
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
              InlineKeyboardButton("🗳 Deploy", url="https://heroku.com/deploy?template=https://github.com/Jackandoggy/private"),
-             InlineKeyboardButton("🤖 Update", url="https://t.me/Mo_Tech_YT")
+             InlineKeyboardButton("🤖 Update", url="https://t.me/film_godown")
              ]]
         else:
             buttons = [[
@@ -31,7 +31,7 @@ async def start_message(bot, message):
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
              InlineKeyboardButton("🗳 Deploy", url="https://heroku.com/deploy?template=https://github.com/Jackandoggy/private"),
-             InlineKeyboardButton("🤖 Update", url="https://t.me/Mo_Tech_YT")
+             InlineKeyboardButton("🤖 Update", url="https://t.me/film_godown")
              ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(first = message.from_user.first_name, last = message.from_user.last_name, username = None if not message.from_user.username else '@' + message.from_user.username, mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
         
