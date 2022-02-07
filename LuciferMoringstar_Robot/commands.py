@@ -8,7 +8,7 @@ from LuciferMoringstar_Robot.database.broadcast_db import Database
 db = Database()
 
 
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["start"]))
+@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["begin"]))
 async def start_message(bot, message):
     if not await db.is_user_exist(message.from_user.id):
         await db.add_user(message.from_user.id)
@@ -20,7 +20,7 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="help"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🗳 Deploy", url="https://t.me/Mo_Tech_YT"),
+             InlineKeyboardButton("🗳 Deploy", url="https://heroku.com/deploy?template=https://github.com/Jackandoggy/private"),
              InlineKeyboardButton("🤖 Update", url="https://t.me/Mo_Tech_YT")
              ]]
         else:
@@ -30,7 +30,7 @@ async def start_message(bot, message):
              InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
              InlineKeyboardButton("😎 About", callback_data="about") 
              ],[
-             InlineKeyboardButton("🗳 Deploy", url="https://t.me/Mo_Tech_YT"),
+             InlineKeyboardButton("🗳 Deploy", url="https://heroku.com/deploy?template=https://github.com/Jackandoggy/private"),
              InlineKeyboardButton("🤖 Update", url="https://t.me/Mo_Tech_YT")
              ]]    
         await message.reply_photo(photo = choice(BOT_PICS), caption=START_MSG.format(first = message.from_user.first_name, last = message.from_user.last_name, username = None if not message.from_user.username else '@' + message.from_user.username, mention = message.from_user.mention, bot_name = bot_info.BOT_NAME, bot_username = bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons))
@@ -44,7 +44,7 @@ async def start_message(bot, message):
         reply_markup = InlineKeyboardMarkup(button)
         await message.reply_photo(
             photo=choice(FORCES),
-            caption=f"""<i><b>Hello {message.from_user.mention}. \nYou Have <a href="{invite_link.invite_link}">Not Subscribed</a> To <a href="{invite_link.invite_link}">My Update Channel</a>.So you do not get the Files on Inline Mode, Bot Pm and Group</i></b>""",
+            caption=f"""<i><b>Hello {message.from_user.mention}. \nYou Have <a href="{invite_link.invite_link}">Not Subscribed</a> To <a href="{invite_link.invite_link}">My Channel</a>.So you do not get the Files on Inline Mode, Bot Pm and Group. Please join and retry</i></b>""",
             reply_markup=reply_markup
         )
         return
