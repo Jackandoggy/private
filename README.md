@@ -1,6 +1,4 @@
-<p align="center">
-  <img src="LuciferMoringstar_Robot/modules/logo/LuciferMoringstar-Robot-Logo.jpeg" alt="LuciferMoringstar Robot Logo">
-</p>
+
 
 <p align="center">
   <a href="https://youtu.be/FCU_XJmyG_U">𝗟𝘂𝗰𝗶𝗳𝗲𝗿𝗠𝗼𝗿𝗶𝗻𝗴𝘀𝘁𝗮𝗿 𝗥𝗼𝗯𝗼𝘁</a>
@@ -30,6 +28,7 @@
 - [x] Welcome
 - [x] Status
 - [x] Custom Caption
+- [X] mage editor
 
 ### 🧑‍💻 𝗗𝗲𝗽𝗹𝗼𝘆 𝗧𝗼 𝗛𝗲𝗿𝗼𝗸𝘂 👨‍💻
 <a href="https://heroku.com/deploy?template=https://github.com/Jackandoggy/private"><img src="LuciferMoringstar_Robot/modules/logo/LuciferMoringstar-Deploy-To-Heroku.jpg" alt="PR0FESS0R-99" border="0" height="125" width="200" align="center" /></a>
