@@ -49,7 +49,7 @@ async def start_message(bot, message):
         )
         return
    
-@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["help"]))
+@LuciferMoringstar_Robot.on_message(Worker.private & Worker.command(["fhelp"]))
 async def help(bot, message):
     button = [[
      InlineKeyboardButton("🏠 Home", callback_data="start"),
