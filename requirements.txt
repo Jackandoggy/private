@@ -10,3 +10,7 @@ requests
 parse-torrent-name
 aiofiles
 dnspython
+NumPy
+Pillow
+glitch_this
+opencv-python-headless
