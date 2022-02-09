@@ -39,7 +39,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                      InlineKeyboardButton("Close 🗑️", callback_data="close")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 CHECK MY PM 🤖", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
+                    [InlineKeyboardButton(text="⚠️ CHECK BOT PM ⚠️", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -57,7 +57,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                      InlineKeyboardButton("Close 🗑️", callback_data="close")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 CHECK MY PM 🤖", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
+                    [InlineKeyboardButton(text="⚠️ CHECK BOT PM ⚠️", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -84,7 +84,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                      InlineKeyboardButton("Close 🗑️", callback_data="close")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 CHECK MY PM 🤖", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
+                    [InlineKeyboardButton(text="⚠️ CHECK BOT PM ⚠️", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
                 )
                 await query.edit_message_reply_markup( 
                     reply_markup=InlineKeyboardMarkup(buttons)
@@ -101,7 +101,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                      InlineKeyboardButton("Close 🗑️", callback_data="close")]
                 )
                 buttons.append(
-                    [InlineKeyboardButton(text="🤖 CHECK MY PM 🤖", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
+                    [InlineKeyboardButton(text="⚠️ CHECK BOT PM ⚠️", url=f"https://telegram.dog/{bot_info.BOT_USERNAME}")]
                 )
 
                 await query.edit_message_reply_markup( 
@@ -221,7 +221,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                         file_id=file_id,
                         caption=f_caption
                         )
-                    await query.answer('🤖 Check PM, I have Sent Files In Pm 🤖',show_alert = True)
+                    await query.answer('⚠️ Hey {query.from_user.first_name}! I have files in your PM please Check Bot pm⚠️ ',show_alert = True)
             except UserIsBlocked:
                 await query.answer('Unblock the bot mahn !',show_alert = True)
             except PeerIdInvalid:
@@ -271,20 +271,14 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
                  InlineKeyboardButton("➕️ Add me to ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
                  ],[
                  InlineKeyboardButton("ℹ️ Help", callback_data="help"),
-                 InlineKeyboardButton("😎 About", callback_data="about") 
-                 ],[
-                 InlineKeyboardButton("🗳 Deploy", url="https://youtu.be/FCU_XJmyG_U"),
-                 InlineKeyboardButton("🤖 Update", url="https://t.me/Mo_Tech_Group")
+                 InlineKeyboardButton("😎 About", callback_data="about")
                  ]]
             else:
                 buttons = [[
                  InlineKeyboardButton("➕️ Add me to ➕️", url=f"http://t.me/{bot_info.BOT_USERNAME}?startgroup=true")
                  ],[
                  InlineKeyboardButton("ℹ️ Help", callback_data="bot_owner"),
-                 InlineKeyboardButton("😎 About", callback_data="about") 
-                 ],[
-                 InlineKeyboardButton("🗳 Deploy", url="https://heroku.com/deploy?template=https://github.com/Jackandoggy/private"),
-                 InlineKeyboardButton("🤖 Update", url="https://t.me/film_godown")
+                 InlineKeyboardButton("😎 About", callback_data="about")
                  ]]               
             await query.message.edit(text=START_MSG.format(mention=query.from_user.mention, bot_name=bot_info.BOT_NAME, bot_username=bot_info.BOT_USERNAME), reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
 
@@ -313,7 +307,7 @@ async def cb_handler(client: LuciferMoringstar_Robot, query):
             await query.answer()
 
     else:
-        await query.answer("Please Request",show_alert=True)
+        await query.answer("⚠️ Hey, {query.from_user.first_name}! Search Your Own File, Don't Click Others Results 😬",show_alert=True)
 
 
 
